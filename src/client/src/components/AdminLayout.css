@@ -1,0 +1,22 @@
+.admin-layout-root {
+  display: flex;
+  /* Reserve space for the fixed header (64px) and make layout fill remaining viewport */
+  height: calc(100vh - 64px);
+  width: 100%;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 24px 0;
+  background: #F7FAFC;
+
+  /* Make the central content scrollable independently */
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 900px) {
+  .admin-layout-root { flex-direction: column; height: auto; }
+  .admin-content { padding: 12px; height: auto; }
+}

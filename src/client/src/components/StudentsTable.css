@@ -1,0 +1,113 @@
+.students-table-root {
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.students-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.students-search input {
+  padding: 8px 10px;
+  width: 260px;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+}
+
+.students-meta {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.students-table-wrap {
+  overflow-x: auto;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.students-table thead th {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+}
+
+.students-table tbody td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.students-table .center {
+  text-align: center;
+  padding: 20px 0;
+  color: #666;
+}
+
+.students-pagination {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.students-pagination button {
+  padding: 6px 12px;
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.students-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.students-page-info {
+  color: #444;
+}
+
+/* Action buttons */
+.students-table .action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.students-table .btn-edit {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.students-table .btn-edit:hover {
+  background: var(--primary-light);
+}
+
+.students-table .btn-delete {
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.students-table thead th.actions {
+  width: 110px;
+  text-align: center;
+}

@@ -1,0 +1,1 @@
+(helper) finance routes added in financeRoute.js, controllers in financeController.js, models tuitionModel.js scholarshipModel.js, mounted in index.js

@@ -1,0 +1,9 @@
+/* global design variables for university branding */
+:root {
+  --primary: #012A6B;
+  --primary-light: #274B8A;
+  --primary-rgb: 1, 42, 107;
+  --primary-light-rgb: 39, 75, 138;
+  --primary-contrast: #ffffff;
+  --muted: #A0AEC0;
+}

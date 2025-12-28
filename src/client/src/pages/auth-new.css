@@ -1,0 +1,33 @@
+/* New minimal auth page styles - centered standalone */
+:root{
+  --auth-bg: #f1f6f9;
+  --card-bg: #ffffff;
+  --primary: #2d3748;
+}
+html,body,#root{height:100%;}
+.auth-container-new{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: linear-gradient(180deg, rgba(45,55,72,0.02), var(--auth-bg));
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.auth-card-new{
+  width:100%;
+  max-width:520px;
+  background:var(--card-bg);
+  padding:36px 32px;
+  border-radius:12px;
+  box-shadow:0 20px 50px rgba(15,23,42,0.12);
+  box-sizing:border-box;
+}
+.auth-brand-new{display:flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:12px;background:#f7fafc;margin:0 auto 12px;color:var(--primary);font-size:26px}
+.auth-title-new{font-size:24px;font-weight:700;color:var(--primary);text-align:center;margin-bottom:6px}
+.auth-sub-new{font-size:13px;color:#718096;text-align:center;margin-bottom:18px}
+.form-group{margin-bottom:16px}
+.form-label{display:flex;align-items:center;gap:8px;color:#2d3748;margin-bottom:6px}
+.form-control{width:100%;padding:12px 14px;border-radius:8px;border:1px solid #e6edf3;background:#fbfeff}
+.btn-auth{width:100%;padding:12px;border-radius:10px;background:linear-gradient(90deg,#4A5568,#718096);color:#fff;border:none;font-weight:700;cursor:pointer}
+.auth-footer-new{text-align:center;margin-top:16px;color:#64748b;font-size:14px}
+@media (max-width:600px){.auth-card-new{margin:16px;max-width:420px;padding:28px}}

@@ -1,0 +1,85 @@
+body {
+  background: #F7FAFC;
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  background: #F7FAFC;
+}
+
+/* Management table header shared style */
+.management-table thead th {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 12px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 12px;
+}
+
+.management-table tbody td {
+  padding: 12px 10px;
+  vertical-align: middle;
+}
+
+.management-table .action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* Standardize primary action button */
+.btn-edit, .management-table .btn-primary {
+  background: var(--primary);
+  border: none;
+  color: #fff;
+}
+
+.btn-edit:hover, .management-table .btn-primary:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.3);
+}
+
+/* Keep delete buttons red */
+.btn-delete, .btn-danger {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn-delete:hover, .btn-danger:hover {
+  background: #c0392b;
+}
+
+/* Action container alias for backward compat */
+.actionButtons, .action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ensure small action buttons consistent */
+.action-buttons .btn-sm, .actionButtons .btn-sm {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* Make action icons centered */
+.action-buttons .btn i, .actionButtons .btn i { font-size: 14px; }
+
+/* Ensure Actions header and column sizing */
+.management-table thead th.actions,
+.table thead th.actions {
+  width: 110px;
+  text-align: center;
+}
+.management-table td .action-buttons,
+.table td .action-buttons {
+  min-width: 110px;
+  justify-content: center;
+}
